@@ -13,6 +13,19 @@ Changelog
     Deprecated
     ----------
 
+Newer releases
+==============
+Release notes are now only on GitHub: https://github.com/janluke/cloup/releases.
+
+v1.0.2 (2022-11-04)
+=======================
+- Skip constraints checking when passing ``--help`` to a subcommand. :issue:`129`
+
+v1.0.1 (2022-09-22)
+=======================
+- Show a helpful error message when some tries to use command decorators without
+  parenthesis. :pr:`128`
+
 v1.0.0 (2022-07-17)
 ===================
 - Drop support for Python 3.6. Python 3.6 ha reached end-of-life in Dec 2021 and

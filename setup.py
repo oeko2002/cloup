@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 from pathlib import Path
-from textwrap import dedent
 
 from setuptools import find_packages, setup
 
@@ -45,6 +44,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
     packages=find_packages(include=['cloup', 'cloup.*']),
     zip_safe=False,
