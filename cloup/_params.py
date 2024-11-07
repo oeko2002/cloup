@@ -4,7 +4,9 @@ from click.decorators import _param_memo
 
 class Argument(click.Argument):
     """A :class:`click.Argument` with help text."""
-
+    
+    help = None
+    
     def __init__(self, *args, help=None, **attrs):
         super().__init__(*args, **attrs)
         self.help = help
@@ -16,6 +18,8 @@ class Argument(click.Argument):
 class Option(click.Option):
     """A :class:`click.Option` with an extra field ``group`` of type ``OptionGroup``."""
 
+    group = None
+    
     def __init__(self, *args, group=None, **attrs):
         super().__init__(*args, **attrs)
         self.group = group
