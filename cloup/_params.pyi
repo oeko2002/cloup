@@ -25,7 +25,7 @@ class Option(click.Option):
         ...
 
 F = TypeVar('F', bound=Callable[..., Any])
-P = TypeVar('P', bound=click.Parameter)
+P = TypeVar('P', bound=Union[Argument, Option])
 
 SimpleParamTypeLike = Union[click.ParamType, Type[float], Type[int], Type[str]]
 ParamTypeLike = Union[SimpleParamTypeLike, Tuple[SimpleParamTypeLike, ...]]
